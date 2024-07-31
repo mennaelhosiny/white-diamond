@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="flower.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+            <!-- font awesome cdn link  -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!--google font-->
+       <link rel="stylesheet" href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbS1yQjdhcWdzNWt5by03SXliWWhTYVFVSDJUd3xBQ3Jtc0trbkdLV1VtdGhiRWszSTU4dFBGRzBLWk1NeVJFdFllWXB2cDAwRHFPODVoRzFwRkdHdmVCVXo3MWtBRTVnaGJJbmk1U2k5THl1eGxLSnV2b3ItVF9SelRzSy0yWXloYnhkZEE5UXlPRUs0OWhTMFV6bw&q=https%3A%2F%2Fcdnjs.cloudflare.com%2Fajax%2Flibs%2Ffont-awesome%2F5.15.3%2Fcss%2Fall.min.css&v=KwZYGkjITeI">
+        <title>white diamond</title>
+    </head>
+<body>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'en,ar',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+    </script>
+
+   <style>
+     .goog-te-banner-frame.skiptranslate,
+    .goog-te-gadget-icon,
+    .goog-te-banner,
+    .VIpgJd-ZVi9od-ORHb-OEVmcd {
+      display: none !important;
+    }
+    .goog-te-gadget {
+      color: transparent !important;
+    }
+    .goog-te-gadget .goog-te-combo {
+      color: black !important;
+      font-size: 16px; /* Adjust font size as needed */
+    }
+    body {
+      top: 0px !important;
+    }
+    .skiptranslate.goog-te-gadget img
+    {
+        display: none !important;
+    }
+   @media screen and (min-width :768px) {
+        .navbar {
+            display: flex;
+        }
+   }
+  </style>
+</head>
+<body>
+   
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="index.html" class="logo">
+            <img src="images/white diamond restaurant menu/white diamond logo without back.png" alt="" width="50%">
+        </a>
+        <nav class="navbar">
+            <a href="index.html" data-i18n="home">home</a>
+            <a href="index.html#about" data-i18n="about">about</a>
+            <a href="https://wa.me/+966550888378" data-i18n="contact">contact us</a>
+            <div class="dropdown" style="margin-left: 5px;">
+                <button class="dropdown-toggle" data-i18n="language">language   </button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item"  data-lang="en" data-i18n="english">English</a>
+                    <a href="#" class="dropdown-item" data-lang="ar" data-i18n="arabic">Arabic</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="breakfast" id="home" style="margin-top: 60px;" >
+        <div class="overlay"></div>
+        <div class="content">
+            <h3 data-i18n="breakfastTitle">Diamond breakfast</h3>
+            <span data-i18n="breakfastSpan"> Fuel your day </span>
+            <p data-i18n="breakfastDesc">Fuel your day with a delicious and energizing breakfast at the White Diamond Hote.</p>
+
+        </div>
+       
+    </section> 
+
+
+    <section>
+        <h1 class="heading">
+            <span data-i18n="menu">menu</span> <span data-i18n="breakfast" style="color: #bbb;">breakfast</span>
+        </h1>
+        <div class="subtitle-container">
+            <div class="line"> </div>
+            <h2 class="subtitle" data-i18n="subtitle1"> CHOOSE THE CNTINENTAL   BREAKFAST </h2>
+            <div class="line"></div>
+        </div>
+        <div class="button-container">
+            <button class="toggle-button" onclick="showContent('content1')" data-i18n="guilds1">guilds</button>
+            <button class="toggle-button" onclick="showContent('content2')" data-i18n="Juices1">Juices</button>
+            <button class="toggle-button" onclick="showContent('content3')" data-i18n="hotdrinks1">hot drinks</button>
+        </div>
+    
+        <div id="content1" class="content-menu">
+
+          
+          
+            <div class="menu-breakfast">
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/continial/corwasoo.png" alt="Croissant">
+                    <div class="menu-details">
+                        <h3 data-i18n="Croissant">Croissant </h3>
+                        <span data-i18n="CroissantSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/continial/bancake.png" alt="pancake">
+                    <div class="menu-details">
+                        <h3 data-i18n="pancake">pancake  </h3>
+                        <span data-i18n="pancakeSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/continial/englishcake.png" alt="Englishcake">
+                    <div class="menu-details">
+                        <h3 data-i18n="Englishcake">English cake </h3>
+                        <span data-i18n="EnglishcakeSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/continial/CHINESE CHICKEN WITH RICE.png" alt="cornflakes">
+                    <div class="menu-details">
+                        <h3 data-i18n="cornflakes">corn flakes </h3>
+                        <span data-i18n="cornflakesSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+        <div id="content2" class="content-menu">
+            
+
+            <div class="menu-breakfast">
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/orange.png" alt="naturalorange">
+                    <div class="menu-details">
+                        <h3 data-i18n="naturalorange">natural orange </h3>
+                        <span data-i18n="naturalorangeSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/limon.png" alt="natural lemon">
+                    <div class="menu-details">
+                        <h3 data-i18n="naturallemon">natural lemon </h3>
+                        <span data-i18n="naturallemonSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+         
+            </div>
+
+        </div>
+        <div id="content3" class="content-menu">
+            
+            
+            <div class="menu-breakfast">
+                <div class="menu-item-breakfast">
+                    <img src="images/hot drink/hot drink/Arabic Coffee...Turkish Coffee.png " alt="coffee">
+                    <div class="menu-details">
+                        <h3 data-i18n="coffee">coffee </h3>
+                        <span data-i18n="coffeeSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/hot drink/hot drink/tea.png" alt="tea">
+                    <div class="menu-details">
+                        <h3 data-i18n="tea">tea </h3>
+                        <span data-i18n="teaSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/hot drink/hot drink/milk.png" alt="hot milk">
+                    <div class="menu-details">
+                        <h3 data-i18n="hotmilk"> hot milk</h3>
+                        <span data-i18n="hotmilkSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/hot drink/hot drink/milk.png" alt="cold milk">
+                    <div class="menu-details">
+                        <h3 data-i18n="coldmilk"> cold milk</h3>
+                        <span data-i18n="coldmilkSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+            </div>     
+        </div>
+       
+
+    </section>
+   
+    <section>
+        <div class="subtitle-container">
+            <div class="line"> </div>
+            <h2 class="subtitle" data-i18n="subtitle2"> CHOOSE THE ARABIC    BREAKFAST </h2>
+            <div class="line"></div>
+        </div>
+        <div class="button-container">
+            <button class="toggle-button" onclick="showContents('contents-1')" data-i18n="guilds1">guilds</button>
+            <button class="toggle-button" onclick="showContents('contents-2')" data-i18n="appetizers">appetizers</button>
+            <button class="toggle-button" onclick="showContents('contents-3')" data-i18n="thebread">the bread</button>
+            <button class="toggle-button" onclick="showContents('contents-4')" data-i18n="Juices1">Juices</button>
+            <button class="toggle-button" onclick="showContents('contents-5')" data-i18n="hotdrinks1">Hot drinks</button>
+
+
+        </div>
+    
+        <div id="contents-1" class="content-menu-2">
+
+          
+          
+            <div class="menu-breakfast">
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/boiledegg.png" alt=" Boiled eggs">
+                    <div class="menu-details">
+                        <h3 data-i18n="Boiledeggs">   Boiled eggs </h3>
+                        <p data-i18n="Boiledeggsdesc" style="margin-bottom: 10px;"></p>
+                        <span data-i18n="BoiledeggsSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/omlet.png" alt="omelette">
+                    <div class="menu-details">
+                        <h3 data-i18n="omelette">  omelette  </h3>
+                        <p data-i18n="omelettedesc" style="margin-bottom: 10px;"></p>
+                        <span data-i18n="omeletteSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/foul.png" alt="foul">
+                    <div class="menu-details">
+                        <h3 data-i18n="foul">foul </h3>
+                        <p data-i18n="fouldesc" style="margin-bottom: 10px;"></p>
+                        <span data-i18n="foulSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/cheese5.png" alt="mixed cheese ">
+                    <div class="menu-details">
+                        <h3 data-i18n="mixedcheese">mixed cheese </h3>
+                        <p data-i18n="mixedcheesedesc" style="margin-bottom: 10px;"></p>
+                        <span data-i18n="mixedcheeseSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+        <div id="contents-2" class="content-menu-2">
+            
+
+            <div class="menu-breakfast">
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/lbna.png" alt="labneh">
+                    <div class="menu-details">
+                        <h3 data-i18n="labneh">labneh</h3>
+                        <p data-i18n="labnehdesc" style="margin-bottom: 10px;"></p>
+                        <span data-i18n="labnehSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/salad.png" alt="salad">
+                    <div class="menu-details">
+                        <h3 data-i18n="salad">salad  </h3>
+                        <p data-i18n="saladdesc" style="margin-bottom: 10px;"></p>
+                        <span data-i18n="saladSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/continial/apptizer.png" alt="Mixed dish">
+                    <div class="menu-details">
+                        <h3 data-i18n="Mixeddish">Mixed dish</h3>
+                        <p data-i18n="Mixeddishdesc" style="margin-bottom: 10px;"></p>
+                        <span data-i18n="MixeddishSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+              
+               
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/HUMMUS.png" alt="hummus">
+                    <div class="menu-details">
+                        <h3 data-i18n="hummus">hummus   </h3>
+                        <p data-i18n="hummusdesc" style="margin-bottom: 10px;"></p>
+                        <span data-i18n="hummusbreakfastSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+         
+            </div>
+
+        </div>
+        <div id="contents-3" class="content-menu-2">
+            
+            
+            <div class="menu-breakfast">
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/bread.png" alt="Arabic bread">
+                    <div class="menu-details">
+                        <h3 data-i18n="Arabicbread">Arabic bread </h3>
+                        <span data-i18n="ArabicbreadSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/toust.png" alt="toast">
+                    <div class="menu-details">
+                        <h3 data-i18n="toast">toast </h3>
+                        <span data-i18n="toastSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+               
+            </div>     
+        </div>
+        <div id="contents-4" class="content-menu-2">
+            
+            
+            <div class="menu-breakfast">
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/orange.png" alt="natural orange">
+                    <div class="menu-details">
+                        <h3 data-i18n="naturalorange">natural orange </h3>
+                        <span data-i18n="naturalorangeSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/breakfast-meal/arabic/limon.png" alt="natural lemon ">
+                    <div class="menu-details">
+                        <h3 data-i18n="naturallemon">natural lemon </h3>
+                        <span data-i18n="naturallemonSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+               
+            </div>     
+        </div>
+        <div id="contents-5" class="content-menu-2">
+            
+            
+            <div class="menu-breakfast">
+                <div class="menu-item-breakfast">
+                    <img src="images/hot drink/hot drink/Arabic Coffee...Turkish Coffee.png " alt="coffee" >
+                    <div class="menu-details">
+                        <h3 data-i18n="coffee">coffee </h3>
+                        <span data-i18n="coffeeSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/hot drink/hot drink/tea.png" alt="tea">
+                    <div class="menu-details">
+                        <h3 data-i18n="tea">tea </h3>
+                        <span data-i18n="teaSpan"  class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/hot drink/hot drink/milk.png" alt="hot milk">
+                    <div class="menu-details">
+                        <h3 data-i18n="hotmilk"> hot milk</h3>
+                        <span data-i18n="hotmilkSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+                <div class="menu-item-breakfast">
+                    <img src="images/hot drink/hot drink/milk.png" alt="cold milk">
+                    <div class="menu-details">
+                        <h3 data-i18n="coldmilk"> cold milk</h3>
+                        <span data-i18n="coldmilkSpan" class="price">45 SAR</span>
+                    </div>
+                </div>
+            </div>     
+        </div>
+       
+
+    </section>
+
+
+
+
+  
+<style>
+    .loading-gif {
+        max-width: 500px;
+    }
+
+    .pre-loader {
+        position: fixed;
+        z-index: 100; /* make sure this is the highest value compared to all other divs */
+        top: 0;
+        left: 0;
+        background: #457d85;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .pre-loader.hidden {
+        animation: fadeOut 2s; /** change to 1s */
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeOut {
+        100% {
+            visibility: hidden;
+        }
+    }
+    .loading-gif {
+    width: 50px; /* Initial size */
+    height: auto;
+    animation: grow 3s ease-in-out ;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0.5); /* Start half size */
+    }
+    50% {
+        transform: scale(5.5); /* Grow to 120% size */
+    }
+    100% {
+        transform: scale(5.5); /* Settle at full size */
+    }
+}
+    @media (max-width: 600px) {
+        .loading-gif {
+            max-width: 60px; /* Adjust as needed for smaller screens */
+        }
+    }
+</style>
+</head>
+<body>
+<!--- Your content goes here -->
+<div class='pre-loader'>
+<img class='loading-gif' alt='loading' src="images/images/ffffffffffffffffffffffffffffff.png"/>
+</div>
+
+<!-- js to hide preloader loading is done -->
+<script type='text/javascript'>
+window.addEventListener('load', function () {
+    document.querySelector('.pre-loader').className += ' hidden';
+},3000);
+</script>
+
+
+
+
+
+
+<!-- footer -->
+
+<section class="footer" style="    background:rgba(51, 255, 228, 0.05);">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 data-i18n="Diamondhotel">Diamond hotel</h3>
+            <a href="index.html" data-i18n="aboutFooter">Jeddah's epitome of luxury and sophistication. Experience refined elegance, impeccable service, in the heart of the city.</a>           
+            <a data-i18n="btn1" href="https://wa.me/+966550888378" >book now</a>
+
+        </div>
+
+        <div class="box">
+            <h3 data-i18n="quicklinks">quick links</h3>
+            <a data-i18n="home" href="#home">home</a>
+            <a data-i18n="about" href="#about">about</a>    
+            <a data-i18n="rooms" href="rooms.html">rooms</a>
+
+
+
+          
+        </div>
+
+       
+
+        <div class="box">
+            <h3 data-i18n="locations">locations</h3>
+            <a href="https://www.google.com/maps/place/%D9%81%D9%86%D8%AF%D9%82+%D9%88%D8%A7%D9%8A%D8%AA+%D8%AF%D9%8A%D9%85%D9%88%D9%86%D8%AF+3+-+3+WHITE+DIAMOND+HOTEL%E2%80%8F%E2%80%AD/@21.6196571,39.1640611,17z/data=!3m1!4b1!4m9!3m8!1s0x15c3d7f6ab4e26f3:0x3f96750b0bbb7312!5m2!4m1!1i2!8m2!3d21.6196571!4d39.1640611!16s%2Fg%2F11rgzv2msb?entry=ttu" data-i18n="location">Sultan Ibn Salman St, An Nuzhah, Jeddah.</a>
+            
+        </div>
+
+        <div class="box">
+            <h3  data-i18n="contactinfo">contact info</h3>
+            <a href="tel:+966550888378">+966 55 088 8378</a>
+            <a href="https://www.facebook.com/profile.php?id=61560594252365" data-i18n="facebook">facebook</a>
+            <a href="https://www.instagram.com/white_diamond_hotels?igsh=YnFxM3Rtc3RyOHNj" data-i18n="instagram">instagram</a>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+ <script src="flower.js"></script>
+</body>
+</html>
