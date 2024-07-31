@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" white diamond Identity
       Escape the ordinary at White Diamond Hotel, your luxurious haven in the heart of Jeddah. We’re more than just a place to stay; we’re a destination for relaxation, rejuvenation, and unforgettable experiences.">
-    <link id="stylesheet" rel="stylesheet" href="flower.css">
+   
+      <link id="stylesheet" rel="stylesheet" href="flower.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -109,7 +110,7 @@
 
  <div class="home-slider">
     <div class="mySlides fade">
-        <img src="images/white diamond restaurant menu/01.jpg" style="width:100%">
+        <img src="images/white diamond restaurant menu/01.jpg" style="width:100%" class="lazy">
 
     </div>
     <div class="mySlides fade">
@@ -206,12 +207,6 @@
         setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
 </script>  
-  
-  
-
-
-
-
 
  <section class="about" id="about">
 
@@ -221,8 +216,17 @@
     <div class="row">
 
         <div class="video-container" >
-            <video src="images/images/video.mp4" loop="" autoplay="" muted=""></video>
-            <h3 data-i18n="titlevideo">Where every moment shines ..</h3>
+            <video width="600" autoplay muted playsinline controls loop>
+                <source src="images/images/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <script>
+                // Optional: Check for errors in loading the video
+                document.querySelector('video').addEventListener('error', function(event) {
+                    console.log('Error loading video:', event);
+                    alert('There was an error loading the video.');
+                });
+            </script>            <h3 data-i18n="titlevideo">Where every moment shines ..</h3>
         </div>
 
         <div class="content">

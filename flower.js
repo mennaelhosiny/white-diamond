@@ -186,6 +186,7 @@ const translations = {
       chickenpanedesc:"Boneless chicken cooked with mushrooms, a protein-rich meal served with rice.",
       chickenpaneSpan:"price: 25 SR",
       beefsteakwmashroom:"beef steakw/mashroom",
+      beefsteakwmashroomdesc:"Slices of  beef steak with mushroom.",
       beefsteakwmashroomSpan:"price: 55 SR",
       grilledfish:"grilled fish",
       grilledfishdesc:"A plate of Red Sea fish with White Diamond's special grill mix.",
@@ -203,7 +204,7 @@ const translations = {
       chickensteakdesc:"Tender chicken meat with a delicious sauce, a delicious dish.",
       chickensteakSpan:"price: 55 SR",
       chinesechickenWrice:"chinese chicken with rice",
-      chinesechickenWricedesc:"",
+      chinesechickenWricedesc:"A distinctive dish of chicken, rice and vegetables cooked in Chinese style",
       chinesechickenWriceSpan:"price: 35 SR",
       chinesebeefwhithrice:"Chinese Beef Whith Rice ",
       chinesebeefwhithricedesc:"A distinctive meat dish in the Chinese style served with white rice",
@@ -235,12 +236,16 @@ const translations = {
       halloumisandwichSpan:"price: 30 SR",
       pasta:"P A S T A",
       spaghettibolognese:"spaghetti bolognese",
+      spaghettibolognesedesc:"Classic spaghetti pasta made with delicious sauce and meat.",
       spaghettibologneseSpan:"price: 30 SR",
       spaghettineapolitan:"spaghetti neapolitan",
+      spaghettineapolitandesc:" Simple tomato sauce with fresh herbs, a delicious dish rich in flavor.",
       spaghettineapolitanSpan:"price: 25 SR",
       pannearrabbiata:"panne arrabbiata",
+      pannearrabbiatadesc:"Pasta cooked with hot sauce consisting of garlic and dried red hot pepper in olive oil.",
       pannearrabbiataSpan:"price: 30 SR",
       pastaElfradoo:"pasta elfradoo",
+      pastaElfradoodesc:"Creamy pasta enriched with Parmesan sauce to give a rich and delicious taste.",
       pastaElfradooSpan:"price: 30 SR",
       SOUP:"SOUP",
       creamshrimpsoup:"cream of shrimp soup  ",
@@ -273,7 +278,7 @@ const translations = {
       cheesesambousekdesc:"Delicious, crunchy and filling cheese filling.",
       cheesesambousekSpan:"price: 30 SR",
       meatsambousek:" meat sambousek ",
-      cheesesambousekdesc:"Delicious, crunchy and delicious meat filling.",
+      meatsambousekdesc:"crunchy fried pastry that's stuffed with meat.",
       meatsambousekspan:"price: 30 SR",
       drinks:"D R I N K S",
       sprite:"sprite",
@@ -605,6 +610,7 @@ const translations = {
      chickenpanedesc:"دجاج مخلي ومطبوخ مع الفطر وجبة غنية بالبروتينات تقدم مع الارز.",
      chickenpaneSpan:"السعر: 25 رس",
      beefsteakwmashroom:"لحم البقر/الفطر",
+     beefsteakwmashroomdesc:"شرائح من البيف الستيك مع مشروم ",
      beefsteakwmashroomSpan:"السعر: 55 رس",
      grilledfish:"سمك مشوي طازج ",
      grilledfishdesc:" طبق من اسماك البحر الاحمر مع خلطة الشواء الخاصة بمطعم وايت ديموند.",
@@ -622,11 +628,13 @@ const translations = {
      chickensteakdesc:" لحم دجاج طري مع صلصة لذيذة، طبق شهي.",
      chickensteakSpan:"السعر: 55 رس",
      chinesechickenWrice:"دجاج صيني مع الأرز",
-     chinesechickenWricedesc:"",
+     chinesechickenWricedesc:"طبق مميز من الدجاج والأرز والخضروات مطبوخ على الطريقة الصينية.",
      chinesechickenWriceSpan:"السعر: 35 رس",
-     chinesebeefwhithrice:"طبق لحم مميز على الطريقة الصينية يقدم مع ارز ابيض ",
-     chinesebeefwhithrice:"السعر:25 رس",
+     chinesebeefwhithrice:" لحم بقري صيني مع الأرز ",
+     chinesebeefwhithricedesc:"طبق لحم مميز على الطريقة الصينية يقدم مع ارز ابيض ",
+     chinesebeefwhithricespan:"السعر:25 رس",
      mixedgrilled:"ميكس جريلد",
+     mixedgrilleddesc:"، يجمع بين أشهى أنواع اللحوم المشوية، تجربة طعم مثالية لعشاق اللحوم.",
      mixedgrilledSpan:"السعر: 55 رس",
      SANDWICH:"السندوتشات & البرجر ",
      clubsandwich:" ساندويتش كلاسيكي",
@@ -652,12 +660,16 @@ const translations = {
      halloumisandwichSpan:"السعر: 30 رس",
      pasta:"الباستا",
      spaghettibolognese:"سباغيتي بولونيز كلاسيكي",
+     spaghettibolognesedesc:"مكرونة سباغيتي كلاسيكية مطبوخة بالصلصة الغنية واللذيذة مع اللحم المفروم.",
      spaghettibologneseSpan:"السعر: 30 رس",
      spaghettineapolitan:"سباغيتي نابوليتاني ",
+     spaghettineapolitandesc:"صلصة طماطم بسيطة مع أعشاب طازجة طبق لذيذ و غني بالنكهة.",
      spaghettineapolitanSpan:"السعر: 25 رس",
      pannearrabbiata:"بيني أراببياتا حارة ",
+     pannearrabbiatadesc:"باستا مطبوخة بالصلصة الحارة مكونة من الثوم والفلفل الأحمر الحار المجفف في زيت الزيتون.",
      pannearrabbiataSpan:"السعر: 30 رس",
      pastaElfradoo:"باستا ألفريدو كريمية",
+     pastaElfradoodesc:"باستا كريمية غنية بصلصة البارميزان لتعطي طعم غني ولذيذ.",
      pastaElfradooSpan:"السعر: 30 رس",
      SOUP:"الشوربه",
      creamshrimpsoup:"شوربة كريم جمبري  ",
@@ -1054,4 +1066,29 @@ document.addEventListener('DOMContentLoaded', function () {
     } 
 });
 
-//carsoul
+
+  //lazy load
+  document.addEventListener('DOMContentLoaded', function() {
+    let lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
+
+    if ('IntersectionObserver' in window) {
+        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    let lazyImage = entry.target;
+                    lazyImage.src = lazyImage.dataset.src;
+                    lazyImage.classList.remove('lazy');
+                    lazyImageObserver.unobserve(lazyImage);
+                }
+            });
+        });
+
+        lazyImages.forEach(function(lazyImage) {
+            lazyImageObserver.observe(lazyImage);
+        });
+    } else {
+        lazyImages.forEach(function(lazyImage) {
+            lazyImage.src = lazyImage.dataset.src;
+        });
+    }
+});
