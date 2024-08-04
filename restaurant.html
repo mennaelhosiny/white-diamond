@@ -597,10 +597,6 @@
 
     
 <style>
-    .loading-gif {
-        max-width: 500px;
-    }
-
     .pre-loader {
         position: fixed;
         z-index: 100; /* make sure this is the highest value compared to all other divs */
@@ -615,54 +611,55 @@
     }
 
     .pre-loader.hidden {
-        animation: fadeOut 2s; /** change to 1s */
+        animation: fadeOut 1s;
         animation-fill-mode: forwards;
     }
 
     @keyframes fadeOut {
         100% {
             visibility: hidden;
+            opacity: 0;
         }
     }
-    .loading-gif {
-    width: 50px; /* Initial size */
-    height: auto;
-    animation: grow 3s ease-in-out ;
-}
 
-@keyframes grow {
-    0% {
-        transform: scale(0.5); /* Start half size */
+    .loading-gif {
+        width: 100px; /* Initial size, larger to avoid pixelation */
+        height: auto;
+        animation: grow 3s ease-in-out;
     }
-    50% {
-        transform: scale(5.5); /* Grow to 120% size */
+
+    @keyframes grow {
+        0% {
+            transform: scale(0.5); /* Start half size */
+        }
+        50% {
+            transform: scale(1.2); /* Grow to 120% size */
+        }
+        100% {
+            transform: scale(1); /* Settle at full size */
+        }
     }
-    100% {
-        transform: scale(5.5); /* Settle at full size */
-    }
-}
+
     @media (max-width: 600px) {
         .loading-gif {
-            max-width: 60px; /* Adjust as needed for smaller screens */
+            width: 100%; /* Adjust as needed for smaller screens */
         }
-        .loading-gif {
-       width: 30px; /* Initial size */
-    
-}
     }
 </style>
 </head>
 <body>
 <!--- Your content goes here -->
-<div class='pre-loader'>
-<img class='loading-gif' alt='loading' src="images/images/ffffffffffffffffffffffffffffff.png"/>
+<div class="pre-loader">
+<img class="loading-gif" alt="loading" src="images/images/ffffffffffffffffffffffffffffff.png"/>
 </div>
 
-<!-- js to hide preloader loading is done -->
-<script type='text/javascript'>
+<!-- js to hide preloader when loading is done -->
+<script type="text/javascript">
 window.addEventListener('load', function () {
-    document.querySelector('.pre-loader').className += ' hidden';
-},3000);
+    setTimeout(function () {
+        document.querySelector('.pre-loader').classList.add('hidden');
+    }, 3000); // Add a delay if needed
+});
 </script>
 
 <!-- footer -->

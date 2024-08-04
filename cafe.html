@@ -611,67 +611,72 @@
     </section>
 
   
-<style>
-    .loading-gif {
-        max-width: 500px;
-    }
-
-    .pre-loader {
-        position: fixed;
-        z-index: 100; /* make sure this is the highest value compared to all other divs */
-        top: 0;
-        left: 0;
-        background: #457d85;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-    }
-
-    .pre-loader.hidden {
-        animation: fadeOut 2s; /** change to 1s */
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes fadeOut {
-        100% {
-            visibility: hidden;
+    <style>
+        .pre-loader {
+            position: fixed;
+            z-index: 100; /* make sure this is the highest value compared to all other divs */
+            top: 0;
+            left: 0;
+            background: #457d85;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
         }
-    }
-    .loading-gif {
-    width: 50px; /* Initial size */
-    height: auto;
-    animation: grow 3s ease-in-out ;
-}
 
-@keyframes grow {
-    0% {
-        transform: scale(0.5); /* Start half size */
-    }
-    50% {
-        transform: scale(5.5); /* Grow to 120% size */
-    }
-    100% {
-        transform: scale(5.5); /* Settle at full size */
-    }
-}
-    @media (max-width: 600px) {
-        .loading-gif {
-            max-width: 60px; /* Adjust as needed for smaller screens */
+        .pre-loader.hidden {
+            animation: fadeOut 1s;
+            animation-fill-mode: forwards;
         }
+
+        @keyframes fadeOut {
+            100% {
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+
         .loading-gif {
-        width: 30px; /* Initial size */
-      
-    }
-    }
-</style>
+            width: 100px; /* Initial size, larger to avoid pixelation */
+            height: auto;
+            animation: grow 3s ease-in-out;
+        }
+
+        @keyframes grow {
+            0% {
+                transform: scale(0.5); /* Start half size */
+            }
+            50% {
+                transform: scale(1.2); /* Grow to 120% size */
+            }
+            100% {
+                transform: scale(1); /* Settle at full size */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .loading-gif {
+                width: 100%; /* Adjust as needed for smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
 <!--- Your content goes here -->
-<div class='pre-loader'>
-<img class='loading-gif' alt='loading' src="images/images/ffffffffffffffffffffffffffffff.png"/>
+<div class="pre-loader">
+    <img class="loading-gif" alt="loading" src="images/images/ffffffffffffffffffffffffffffff.png"/>
 </div>
+
+<!-- js to hide preloader when loading is done -->
+<script type="text/javascript">
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            document.querySelector('.pre-loader').classList.add('hidden');
+        }, 3000); // Add a delay if needed
+    });
+</script>
+
 
 <!-- js to hide preloader loading is done -->
 <script type='text/javascript'>
